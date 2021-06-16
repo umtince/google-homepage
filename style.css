@@ -84,24 +84,19 @@ footer a{
 #apps-icon{
     cursor: pointer;
     color: rgba(0, 0, 0, 0.87);
+    opacity: 0.55;
 }
 
 #apps-icon:hover{
     color: black;
+    opacity: 1;
 }
 
-/*header{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    background-color: tomato;
-}*/
-
 #header-right{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 15px;
+    padding-top: 10px;
     background-color: white;
     color:rgba(0, 0, 0, 0.87);
     display: flex;
@@ -117,6 +112,8 @@ footer a{
     font-weight: bold;
     padding: 10px;
     cursor: pointer;
+    line-height: 28px;
+    padding: 0px 12px;
 }
 
 footer{
@@ -127,6 +124,8 @@ footer{
     height: 2.5rem;
     background-color:#f2f2f2;
     color: #70757a;
+    display: flex;
+    flex-direction: row;
     
 }
 
@@ -134,7 +133,8 @@ footer{
     position: fixed;
     right: 0;
     bottom: 0;
-    padding: 0.30rem;
+    padding: 0.60rem;
+    margin-right: 10px;
     
 }
 
@@ -142,5 +142,6 @@ footer{
     position:  fixed;
     left: 0;
     bottom: 0;
-    padding: 0.30rem;
+    padding: 0.60rem;
+    margin-left: 10px;
 }
