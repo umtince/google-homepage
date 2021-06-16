@@ -15,21 +15,79 @@ body{
 
 .search-button{
     color:#5F6368;
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    font-size: 14px;
+    padding: 10px 16px;
     margin: 11px 4px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
+.search-button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
 
+#searchbox-outside{
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+#searchbox-outside:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+#searchbox{
+    border: 0px;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+    margin-right: 2px;
+}
+
+#search-icon{
+    margin-left: 20px;
+    padding-right: 10px;
+}
 
 a{
     padding: 10px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+footer a{
+    color: #5f6368;
 }
 
 .material-icons.md-24{
     font-size: 24px;
     margin-right: 10px;
+}
+
+#apps-icon{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+#apps-icon:hover{
+    color: black;
 }
 
 /*header{
@@ -45,7 +103,7 @@ a{
     top: 0;
     right: 15px;
     background-color: white;
-
+    color:rgba(0, 0, 0, 0.87);
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -58,10 +116,11 @@ a{
     border: 1px solid #2b7de9;
     font-weight: bold;
     padding: 10px;
+    cursor: pointer;
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -72,7 +131,7 @@ footer{
 }
 
 #footer-right{
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     padding: 0.30rem;
@@ -80,7 +139,7 @@ footer{
 }
 
 #footer-left{
-    position:  absolute;
+    position:  fixed;
     left: 0;
     bottom: 0;
     padding: 0.30rem;
